@@ -1,7 +1,7 @@
 /**
  * Created by User on 17/8/2016.
  */
-module.exports=function () {
+var promo=function () {
     var express = require('express');
     var bodyParser = require('body-parser');
     var promoRouter = express.Router();
@@ -49,3 +49,4 @@ module.exports=function () {
 
 
 }
+module.exports=promo();
