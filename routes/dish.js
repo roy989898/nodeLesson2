@@ -1,7 +1,7 @@
 /**
  * Created by User on 16/8/2016.
  */
-module.exports=function () {
+var dishRouter=function () {
     var express = require('express');
     var morgan = require('morgan');
     var bodyParser = require('body-parser');
@@ -67,14 +67,15 @@ module.exports=function () {
 
 
 
-    app.use('/dishes', dishRouter);
+    /*app.use('/dishes', dishRouter);
 
-    app.use(express.static(__dirname + '/public'));
+    app.use(express.static(__dirname + '/public'));*/
 
     /*app.listen(port, hostname, function () {
         console.log(`Server running at http://${hostname}:${port}/`);
     });*/
 
-    return app;
+    return dishRouter;
 
 }
+module.exports = dishRouter();
